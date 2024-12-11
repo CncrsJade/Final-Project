@@ -137,5 +137,5 @@
 <ProductModal 
   bind:isOpen={isModalOpen}
   mode={modalMode}
-  bind:userData={currentProductData}
+  bind:productData={currentProductData}
 /> 

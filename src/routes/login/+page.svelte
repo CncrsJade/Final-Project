@@ -1,57 +1,95 @@
 <script lang="ts">
+  import { currentUser, isAuthenticated } from '$lib/stores/auth';
   import { goto } from '$app/navigation';
-  import { isAuthenticated } from '$lib/stores/auth';
 
   let username = '';
   let password = '';
   let error = '';
 
-  function handleLogin() {
-    // Simple login - just check if fields are not empty
-    if (username && password) {
-      $isAuthenticated = true;
-      goto('/dashboard');
-    } else {
-      error = 'Please fill in all fields';
+  async function handleLogin() {
+    try {
+      const response = await fetch('/api/auth', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        $currentUser = data.user;
+        $isAuthenticated = true;
+        goto('/dashboard');
+      } else {
+        error = data.error;
+      }
+    } catch (err) {
+      error = 'Failed to login. Please try again.';
     }
   }
 </script>
 
-<div class="min-h-screen flex items-center justify-center bg-gray-100">
-  <div class="bg-white p-8 rounded-lg shadow-md w-96">
-    <h1 class="text-2xl font-bold mb-6 text-center">Login</h1>
+<div class="login-container">
+  <form on:submit|preventDefault={handleLogin}>
+    <h1>Login</h1>
     
     {#if error}
-      <div class="bg-red-100 text-red-700 p-3 rounded mb-4">
-        {error}
-      </div>
+      <div class="error">{error}</div>
     {/if}
 
-    <form on:submit|preventDefault={handleLogin} class="space-y-4">
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Username</label>
-        <input
-          type="text"
-          bind:value={username}
-          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        />
-      </div>
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input 
+        type="text" 
+        id="username" 
+        bind:value={username} 
+        required
+      />
+    </div>
 
-      <div>
-        <label class="block text-sm font-medium text-gray-700">Password</label>
-        <input
-          type="password"
-          bind:value={password}
-          class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-        />
-      </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input 
+        type="password" 
+        id="password" 
+        bind:value={password} 
+        required
+      />
+    </div>
 
-      <button
-        type="submit"
-        class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-      >
-        Login
-      </button>
-    </form>
-  </div>
-</div> 
+    <button type="submit">Login</button>
+    <p class="text-center mt-4">
+      Don't have an account? <a href="/signup">Sign Up</a>
+    </p>
+  </form>
+</div>
+
+<style>
+  .login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid hsl(197, 82%, 26%);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(79, 69, 69, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    font-family: roboto;
+    font-style: bold;
+    font-size: 30px;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+    color: hsl(197, 82%, 26%);
+  }
+
+  .error {
+    color: red;
+    margin-bottom: 15px;
+  }
+</style> 
