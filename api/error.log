@@ -1,0 +1,808 @@
+[12-Dec-2024 02:58:34 Europe/Berlin] Incoming request: POST /register
+[12-Dec-2024 02:58:34 Europe/Berlin] Raw request data: {"username":"moo","password":"123"}
+[12-Dec-2024 02:58:34 Europe/Berlin] Parsed request data: Array
+(
+    [username] => moo
+    [password] => 123
+)
+
+[12-Dec-2024 02:59:44 Europe/Berlin] Incoming request: POST /login
+[12-Dec-2024 02:59:44 Europe/Berlin] Raw request data: {"username":"admin","password":"admin1"}
+[12-Dec-2024 02:59:44 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin1
+)
+
+[12-Dec-2024 03:07:46 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 03:07:46 Europe/Berlin] Parsed route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 03:07:46 Europe/Berlin] Final route after cleanup: /api/login
+[12-Dec-2024 03:07:46 Europe/Berlin] Request method: POST
+[12-Dec-2024 03:07:46 Europe/Berlin] Raw request data: {"username":"admin","password":"admin1"}
+[12-Dec-2024 03:07:46 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin1
+)
+
+[12-Dec-2024 03:07:46 Europe/Berlin] Handling POST request for route: /api/login
+[12-Dec-2024 03:07:46 Europe/Berlin] No matching route found for: /api/login
+[12-Dec-2024 03:09:23 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 03:09:23 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 03:09:23 Europe/Berlin] Route after cleanup: /api/login
+[12-Dec-2024 03:09:23 Europe/Berlin] Raw request data: {"username":"admin","password":"admin1"}
+[12-Dec-2024 03:09:23 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin1
+)
+
+[12-Dec-2024 03:09:23 Europe/Berlin] API Error: Route not found: /api/login
+#0 {main}
+[12-Dec-2024 03:11:56 Europe/Berlin] Full URI: /Final-Project/api/login
+[12-Dec-2024 03:11:56 Europe/Berlin] Route before cleanup: /Final-Project/api/login
+[12-Dec-2024 03:11:56 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 03:11:56 Europe/Berlin] Raw request data: {"username":"admin","password":"admin1"}
+[12-Dec-2024 03:11:56 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin1
+)
+
+[12-Dec-2024 03:11:56 Europe/Berlin] API Error: Invalid credentials
+#0 {main}
+[12-Dec-2024 03:12:11 Europe/Berlin] Full URI: /Final-Project/api/login
+[12-Dec-2024 03:12:11 Europe/Berlin] Route before cleanup: /Final-Project/api/login
+[12-Dec-2024 03:12:11 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 03:12:11 Europe/Berlin] Raw request data: {"username":"admin","password":"Admin1"}
+[12-Dec-2024 03:12:11 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => Admin1
+)
+
+[12-Dec-2024 03:12:11 Europe/Berlin] Full URI: /Final-Project/api/sales
+[12-Dec-2024 03:12:11 Europe/Berlin] Route before cleanup: /Final-Project/api/sales
+[12-Dec-2024 03:12:11 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:12:11 Europe/Berlin] API Error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 's.transaction_date' in 'order clause'
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(65): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:12:11 Europe/Berlin] Full URI: /Final-Project/api/inventory
+[12-Dec-2024 03:12:11 Europe/Berlin] Route before cleanup: /Final-Project/api/inventory
+[12-Dec-2024 03:12:11 Europe/Berlin] Route after cleanup: /inventory
+[12-Dec-2024 03:12:11 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(75): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:16:47 Europe/Berlin] Full URI: /Final-Project/api/sales
+[12-Dec-2024 03:16:47 Europe/Berlin] Route before cleanup: /Final-Project/api/sales
+[12-Dec-2024 03:16:47 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:16:47 Europe/Berlin] Full URI: /Final-Project/api/inventory
+[12-Dec-2024 03:16:47 Europe/Berlin] Route before cleanup: /Final-Project/api/inventory
+[12-Dec-2024 03:16:47 Europe/Berlin] Route after cleanup: /inventory
+[12-Dec-2024 03:17:51 Europe/Berlin] Full URI: /Final-Project/api/sales
+[12-Dec-2024 03:17:51 Europe/Berlin] Route before cleanup: /Final-Project/api/sales
+[12-Dec-2024 03:17:51 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:17:51 Europe/Berlin] Full URI: /Final-Project/api/inventory
+[12-Dec-2024 03:17:51 Europe/Berlin] Route before cleanup: /Final-Project/api/inventory
+[12-Dec-2024 03:17:51 Europe/Berlin] Route after cleanup: /inventory
+[12-Dec-2024 03:21:00 Europe/Berlin] Full URI: /Final-Project/api/sales
+[12-Dec-2024 03:21:00 Europe/Berlin] Route before cleanup: /Final-Project/api/sales
+[12-Dec-2024 03:21:00 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:21:00 Europe/Berlin] Full URI: /Final-Project/api/inventory
+[12-Dec-2024 03:21:00 Europe/Berlin] Route before cleanup: /Final-Project/api/inventory
+[12-Dec-2024 03:21:00 Europe/Berlin] Route after cleanup: /inventory
+[12-Dec-2024 03:22:32 Europe/Berlin] Full URI: /Final-Project/api/products
+[12-Dec-2024 03:22:32 Europe/Berlin] Route before cleanup: /Final-Project/api/products
+[12-Dec-2024 03:22:32 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:22:32 Europe/Berlin] Raw request data: {"name":"dsa","description":"","price":314,"stock":132,"category":"","image_url":"dsa","user_id":1}
+[12-Dec-2024 03:22:32 Europe/Berlin] Parsed request data: Array
+(
+    [name] => dsa
+    [description] => 
+    [price] => 314
+    [stock] => 132
+    [category] => 
+    [image_url] => dsa
+    [user_id] => 1
+)
+
+[12-Dec-2024 03:24:04 Europe/Berlin] Full URI: /Final-Project/api/products
+[12-Dec-2024 03:24:04 Europe/Berlin] Route before cleanup: /Final-Project/api/products
+[12-Dec-2024 03:24:04 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:26:19 Europe/Berlin] Full URI: /Final-Project/api/products
+[12-Dec-2024 03:26:19 Europe/Berlin] Route before cleanup: /Final-Project/api/products
+[12-Dec-2024 03:26:19 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:26:19 Europe/Berlin] Full URI: /Final-Project/api/products
+[12-Dec-2024 03:26:19 Europe/Berlin] Route before cleanup: /Final-Project/api/products
+[12-Dec-2024 03:26:19 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:26:24 Europe/Berlin] Full URI: /Final-Project/api/product?id=4
+[12-Dec-2024 03:26:24 Europe/Berlin] Route before cleanup: /Final-Project/api/product
+[12-Dec-2024 03:26:24 Europe/Berlin] Route after cleanup: /product
+[12-Dec-2024 03:26:24 Europe/Berlin] API Error: Route not found
+#0 {main}
+[12-Dec-2024 03:28:41 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:28:41 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:28:41 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:28:42 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:28:42 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:28:42 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:28:45 Europe/Berlin] Full URI: /Final-Project/api/api/products?id=4
+[12-Dec-2024 03:28:45 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:28:45 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:28:45 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:28:45 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:28:45 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:32:37 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:32:37 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:32:37 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:32:38 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:32:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:32:38 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:33:04 Europe/Berlin] Full URI: /Final-Project/api/api/products?id=3
+[12-Dec-2024 03:33:04 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:33:04 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:33:04 Europe/Berlin] DELETE request for route: products with ID: 3
+[12-Dec-2024 03:33:04 Europe/Berlin] Delete query executed. Result: true
+[12-Dec-2024 03:33:04 Europe/Berlin] Product status after update: inactive
+[12-Dec-2024 03:33:04 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:33:04 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:33:04 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:33:36 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:33:36 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:33:36 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:33:36 Europe/Berlin] Full URI: /Final-Project/api/api/inventory
+[12-Dec-2024 03:33:36 Europe/Berlin] Route before cleanup: /Final-Project/api/api/inventory
+[12-Dec-2024 03:33:36 Europe/Berlin] Route after cleanup: /inventory
+[12-Dec-2024 03:33:51 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:33:51 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:33:51 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:33:51 Europe/Berlin] Full URI: /Final-Project/api/api/inventory
+[12-Dec-2024 03:33:51 Europe/Berlin] Route before cleanup: /Final-Project/api/api/inventory
+[12-Dec-2024 03:33:51 Europe/Berlin] Route after cleanup: /inventory
+[12-Dec-2024 03:34:58 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:34:58 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:34:58 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:34:58 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:34:58 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:34:58 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:34:58 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:34:58 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:34:58 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:34:58 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:34:58 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:34:58 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:35:02 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:02 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:02 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:05 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:05 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:05 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:05 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:05 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:05 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:35:09 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:09 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:09 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:10 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:10 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:10 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:12 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:12 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:12 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:12 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:35:15 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:15 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:15 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:19 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:19 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:20 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:20 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:20 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:35:21 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:21 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:21 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:25 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:25 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:25 Europe/Berlin] Raw request data: {"name":"dsa","description":"","price":314,"stock":132,"category":"","image_url":"dsa","user_id":1}
+[12-Dec-2024 03:35:25 Europe/Berlin] Parsed request data: Array
+(
+    [name] => dsa
+    [description] => 
+    [price] => 314
+    [stock] => 132
+    [category] => 
+    [image_url] => dsa
+    [user_id] => 1
+)
+
+[12-Dec-2024 03:35:25 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:25 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:26 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:26 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:26 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:26 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:26 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:35:26 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:35:28 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:35:28 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:35:28 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:35:37 Europe/Berlin] Full URI: /Final-Project/api/api/product
+[12-Dec-2024 03:35:37 Europe/Berlin] Route before cleanup: /Final-Project/api/api/product
+[12-Dec-2024 03:35:37 Europe/Berlin] Route after cleanup: /product
+[12-Dec-2024 03:35:37 Europe/Berlin] API Error: Route not found
+#0 {main}
+[12-Dec-2024 03:38:17 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:38:17 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:38:17 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:41:39 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:41:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:41:39 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:41:39 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:41:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:41:39 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:41:39 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:41:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:41:39 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:41:39 Europe/Berlin] Categories Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.categories' doesn't exist
+[12-Dec-2024 03:41:39 Europe/Berlin] API Error: Error fetching categories
+#0 {main}
+[12-Dec-2024 03:41:39 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:41:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:41:39 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:41:39 Europe/Berlin] Categories Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.categories' doesn't exist
+[12-Dec-2024 03:41:39 Europe/Berlin] API Error: Error fetching categories
+#0 {main}
+[12-Dec-2024 03:42:46 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:42:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:42:46 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:42:46 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:42:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:42:46 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:46:32 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:46:32 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:46:32 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:46:32 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:46:32 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:46:32 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:46:32 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:47:13 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:47:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:47:13 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:47:13 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:47:13 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:47:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:47:13 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:47:14 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:47:14 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:47:14 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:47:14 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:47:14 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:47:14 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:47:14 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:47:14 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:47:14 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:47:14 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:47:14 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(96): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:47:47 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:47:47 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:47:47 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:47:47 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:47:47 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:47:47 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:47:47 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:47:47 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(96): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:47:49 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:47:49 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:47:49 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:47:49 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:47:49 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:47:49 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:47:49 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:53:29 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:53:29 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:53:29 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:53:38 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:53:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:53:38 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:53:38 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:53:38 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:53:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:53:38 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:53:46 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:53:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:53:46 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:53:46 Europe/Berlin] Raw request data: {"name":"dsa","description":"","price":314,"stock":132,"category":"Beverages","image_url":"dsa","user_id":1}
+[12-Dec-2024 03:53:46 Europe/Berlin] Parsed request data: Array
+(
+    [name] => dsa
+    [description] => 
+    [price] => 314
+    [stock] => 132
+    [category] => Beverages
+    [image_url] => dsa
+    [user_id] => 1
+)
+
+[12-Dec-2024 03:53:46 Europe/Berlin] Product creation error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+[12-Dec-2024 03:53:46 Europe/Berlin] API Error: Failed to create product: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+#0 {main}
+[12-Dec-2024 03:55:32 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:55:32 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:55:32 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:55:32 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:55:32 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:55:32 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:55:32 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:55:33 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:55:33 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:55:33 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:55:33 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:55:33 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:55:33 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:55:33 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:55:40 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:55:40 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:55:40 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:55:40 Europe/Berlin] Raw request data: {"name":"dsa","description":"","price":314,"stock":132,"category":"Beverages","image_url":"dsa","user_id":1}
+[12-Dec-2024 03:55:40 Europe/Berlin] Parsed request data: Array
+(
+    [name] => dsa
+    [description] => 
+    [price] => 314
+    [stock] => 132
+    [category] => Beverages
+    [image_url] => dsa
+    [user_id] => 1
+)
+
+[12-Dec-2024 03:55:40 Europe/Berlin] Product creation error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+[12-Dec-2024 03:55:40 Europe/Berlin] API Error: Failed to create product: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+#0 {main}
+[12-Dec-2024 03:57:38 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:57:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:57:38 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:57:38 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:57:38 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:57:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:57:38 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:57:39 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:57:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:57:39 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:57:39 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:57:39 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:57:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:57:39 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:57:51 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:57:51 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:57:51 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:57:51 Europe/Berlin] Raw request data: {"name":"dsa","description":"","price":314,"stock":132,"category":"Beverages","image_url":"dsa","user_id":1}
+[12-Dec-2024 03:57:51 Europe/Berlin] Parsed request data: Array
+(
+    [name] => dsa
+    [description] => 
+    [price] => 314
+    [stock] => 132
+    [category] => Beverages
+    [image_url] => dsa
+    [user_id] => 1
+)
+
+[12-Dec-2024 03:57:51 Europe/Berlin] Product creation error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+[12-Dec-2024 03:57:51 Europe/Berlin] API Error: Failed to create product: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.inventory_logs' doesn't exist
+#0 {main}
+[12-Dec-2024 03:59:19 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:59:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:59:19 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:59:19 Europe/Berlin] Raw request data: {"name":"dsa","description":"","price":314,"stock":132,"category":"Beverages","image_url":"dsa","user_id":1}
+[12-Dec-2024 03:59:19 Europe/Berlin] Parsed request data: Array
+(
+    [name] => dsa
+    [description] => 
+    [price] => 314
+    [stock] => 132
+    [category] => Beverages
+    [image_url] => dsa
+    [user_id] => 1
+)
+
+[12-Dec-2024 03:59:19 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:59:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:59:19 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:59:19 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:59:28 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:59:28 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:59:28 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:59:28 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:59:28 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:28 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:28 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:59:29 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:29 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:29 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:59:30 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:59:30 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:59:30 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:59:30 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:59:30 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:30 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:30 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:59:31 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:59:31 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:59:31 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:59:31 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:59:31 Europe/Berlin] Full URI: /Final-Project/api/api/sales
+[12-Dec-2024 03:59:31 Europe/Berlin] Route before cleanup: /Final-Project/api/api/sales
+[12-Dec-2024 03:59:31 Europe/Berlin] Route after cleanup: /sales
+[12-Dec-2024 03:59:31 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(96): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:59:33 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 03:59:33 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 03:59:33 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 03:59:33 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 03:59:33 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:33 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:33 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 03:59:33 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:33 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 03:59:33 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:00:24 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:24 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:24 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:00:50 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:50 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:50 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:00:51 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:51 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:51 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:00:57 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:57 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:00:57 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:02:12 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:02:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:02:12 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:04:08 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 04:04:08 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 04:04:08 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 04:04:08 Europe/Berlin] Raw request data: {"username":"admin","password":"Admin1"}
+[12-Dec-2024 04:04:08 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => Admin1
+)
+
+[12-Dec-2024 04:04:08 Europe/Berlin] API Error: Invalid credentials
+#0 {main}
+[12-Dec-2024 04:05:38 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 04:05:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 04:05:38 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 04:05:38 Europe/Berlin] Raw request data: {"username":"admin","password":"admin123"}
+[12-Dec-2024 04:05:38 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin123
+)
+
+[12-Dec-2024 04:06:08 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 04:06:08 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 04:06:08 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 04:06:08 Europe/Berlin] Raw request data: {"username":"admin","password":"admin123"}
+[12-Dec-2024 04:06:08 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin123
+)
+
+[12-Dec-2024 04:07:08 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:07:08 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:07:08 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:07:08 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 04:07:09 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:07:09 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:07:09 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:07:09 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 04:07:13 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:07:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:07:13 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:07:17 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:17 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:17 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:07:18 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:07:18 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:07:18 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:07:18 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 04:07:18 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:18 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:18 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:07:20 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:20 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:20 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:07:22 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:07:22 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:07:22 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:07:22 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 04:07:22 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:22 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:22 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:07:27 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:07:27 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:07:27 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:07:27 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 04:07:27 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:27 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:07:27 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:07:47 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:07:47 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:07:47 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:09:06 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:09:06 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:09:06 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:09:06 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\r\n             ...')
+#1 {main}
+[12-Dec-2024 04:09:06 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:09:06 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:09:06 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:09:06 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:09:06 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:09:06 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:11:59 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:11:59 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:11:59 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:11:59 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:11:59 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:11:59 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:11:59 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\n              ...')
+#1 {main}
+[12-Dec-2024 04:11:59 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:11:59 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:11:59 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:12:55 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:12:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:12:55 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:12:55 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\n              ...')
+#1 {main}
+[12-Dec-2024 04:12:55 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:12:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:12:55 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:12:55 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:12:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:12:55 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:12:57 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:12:57 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:12:57 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:12:57 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\n              ...')
+#1 {main}
+[12-Dec-2024 04:12:57 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:12:57 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:12:57 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:13:09 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:13:09 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:13:09 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:13:09 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\n              ...')
+#1 {main}
+[12-Dec-2024 04:13:12 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:13:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:13:12 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:13:12 Europe/Berlin] API Error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'bakery_db.sales' doesn't exist
+#0 C:\xampp\htdocs\Final-Project\api\routes.php(58): PDO->query('\n              ...')
+#1 {main}
+[12-Dec-2024 04:13:12 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:13:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:13:12 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:14:04 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:14:04 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:14:04 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:14:04 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:14:04 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:14:04 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:14:09 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:14:09 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:14:09 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:14:11 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:14:11 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:14:11 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:14:11 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:14:11 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:14:11 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:14:12 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:14:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:14:12 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:14:12 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:14:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:14:12 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:14:16 Europe/Berlin] Full URI: /Final-Project/api/api/users/2
+[12-Dec-2024 04:14:16 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/2
+[12-Dec-2024 04:14:16 Europe/Berlin] Route after cleanup: /users/2
+[12-Dec-2024 04:14:16 Europe/Berlin] API Error: Route not found
+#0 {main}
+[12-Dec-2024 04:15:24 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:15:24 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:15:24 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:15:25 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:15:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:15:25 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:15:25 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:15:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:15:25 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:15:25 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:15:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:15:25 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:15:30 Europe/Berlin] Full URI: /Final-Project/api/api/users/2
+[12-Dec-2024 04:15:30 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/2
+[12-Dec-2024 04:15:30 Europe/Berlin] Route after cleanup: /users/2
+[12-Dec-2024 04:15:30 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:15:30 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:15:30 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:15:45 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:15:45 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:15:45 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:15:45 Europe/Berlin] Raw request data: {"username":"moo","password":"12345678","role":"user"}
+[12-Dec-2024 04:15:45 Europe/Berlin] Parsed request data: Array
+(
+    [username] => moo
+    [password] => 12345678
+    [role] => user
+)
+
+[12-Dec-2024 04:15:45 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[12-Dec-2024 04:16:55 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:16:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:16:55 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:16:55 Europe/Berlin] Raw request data: {"username":"moo","password":"12345678","role":"user"}
+[12-Dec-2024 04:16:55 Europe/Berlin] Parsed request data: Array
+(
+    [username] => moo
+    [password] => 12345678
+    [role] => user
+)
+
+[12-Dec-2024 04:16:55 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:16:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:16:55 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:17:07 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 04:17:07 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 04:17:07 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 04:17:07 Europe/Berlin] Raw request data: {"username":"moo","password":"12345678"}
+[12-Dec-2024 04:17:07 Europe/Berlin] Parsed request data: Array
+(
+    [username] => moo
+    [password] => 12345678
+)
+
+[12-Dec-2024 04:17:08 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:17:08 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:17:08 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:17:10 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:17:10 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:17:10 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:17:11 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:11 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:11 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:17:11 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:17:11 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:17:11 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:17:11 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:17:11 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:17:11 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:17:12 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:12 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:17:12 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:12 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:17:13 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:17:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:17:13 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:17:13 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:17:13 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:17:24 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 04:17:24 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 04:17:24 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 04:17:24 Europe/Berlin] Raw request data: {"username":"admin","password":"admin123"}
+[12-Dec-2024 04:17:24 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => admin123
+)
+
+[12-Dec-2024 04:17:24 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:17:24 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:17:24 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:17:27 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[12-Dec-2024 04:17:27 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[12-Dec-2024 04:17:27 Europe/Berlin] Route after cleanup: /users
+[12-Dec-2024 04:18:12 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:18:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:18:12 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:18:13 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:18:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:18:13 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:18:13 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[12-Dec-2024 04:18:13 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[12-Dec-2024 04:18:13 Europe/Berlin] Route after cleanup: /categories
+[12-Dec-2024 04:18:28 Europe/Berlin] Full URI: /Final-Project/api/api/account/password
+[12-Dec-2024 04:18:28 Europe/Berlin] Route before cleanup: /Final-Project/api/api/account/password
+[12-Dec-2024 04:18:28 Europe/Berlin] Route after cleanup: /account/password
+[12-Dec-2024 04:18:28 Europe/Berlin] Raw request data: {"currentPassword":"admin123","newPassword":"123","userId":1}
+[12-Dec-2024 04:18:28 Europe/Berlin] Parsed request data: Array
+(
+    [currentPassword] => admin123
+    [newPassword] => 123
+    [userId] => 1
+)
+
+[12-Dec-2024 04:18:28 Europe/Berlin] API Error: Route not found: account/password
+#0 {main}
+[12-Dec-2024 04:19:43 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:19:43 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:19:43 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:19:44 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 04:19:44 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 04:19:44 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 04:21:25 Europe/Berlin] Full URI: /Final-Project/api/api/account/password
+[12-Dec-2024 04:21:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/account/password
+[12-Dec-2024 04:21:25 Europe/Berlin] Route after cleanup: /account/password
+[12-Dec-2024 04:21:25 Europe/Berlin] Raw request data: {"userId":1,"currentPassword":"admin123","newPassword":"123"}
+[12-Dec-2024 04:21:25 Europe/Berlin] Parsed request data: Array
+(
+    [userId] => 1
+    [currentPassword] => admin123
+    [newPassword] => 123
+)
+

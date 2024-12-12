@@ -16,8 +16,8 @@ class Connection {
         $this->user = $_ENV['DB_USER'] ?? null;
         $this->pass = $_ENV['DB_PASS'] ?? null;
         
-        // Validate configuration
-        if (!$this->host || !$this->dbname || !$this->user || !$this->pass) {
+        if (!$this->host || !$this->dbname || !$this->user) {
+            error_log("Database configuration missing: " . print_r($_ENV, true));
             throw new Exception("Missing database configuration. Please check your .env file.");
         }
     }
@@ -28,7 +28,7 @@ class Connection {
             $options = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_TIMEOUT => 5, // 5 seconds timeout
+                PDO::ATTR_EMULATE_PREPARES => false,
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8mb4"
             ];
             
@@ -36,9 +36,8 @@ class Connection {
             return $conn;
         } catch(PDOException $e) {
             error_log("Database Connection Error: " . $e->getMessage());
-            error_log("DSN: mysql:host={$this->host};dbname={$this->dbname}");
-            error_log("User: {$this->user}");
-            throw $e; // Re-throw the exception for handling upstream
+            error_log("Connection details: host={$this->host}, dbname={$this->dbname}, user={$this->user}");
+            throw new Exception("Database connection failed: " . $e->getMessage());
         }
     }
 }
@@ -48,7 +47,8 @@ try {
     $connection = new Connection();
     $db = $connection->connect();
 } catch(Exception $e) {
-    header('HTTP/1.1 500 Internal Server Error');
+    error_log("Failed to establish database connection: " . $e->getMessage());
+    http_response_code(500);
     echo json_encode(['error' => 'Database connection failed']);
     exit;
 }

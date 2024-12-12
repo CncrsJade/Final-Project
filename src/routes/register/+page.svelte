@@ -1,16 +1,41 @@
 <script lang="ts">
-  let name = '';
+  import { goto } from '$app/navigation';
+  import { register } from '$lib/api';
+  import { auth } from '$lib/stores/auth';
+
   let username = '';
   let password = '';
   let confirmPassword = '';
+  let error = '';
+  let loading = false;
 
-  function handleRegister() {
-    // Add registration logic here
+  async function handleRegister() {
     if (password !== confirmPassword) {
-      alert("Passwords don't match!");
+      error = "Passwords don't match!";
       return;
     }
-    console.log('Registration attempted:', { name, username, password });
+
+    loading = true;
+    error = '';
+    
+    try {
+      const response = await register({ 
+        username, 
+        password,
+        confirmPassword 
+      });
+      
+      if (response.success) {
+        auth.login(response.user);
+        await goto('/dashboard');
+      } else {
+        error = response.message || 'Registration failed';
+      }
+    } catch (e) {
+      error = 'An error occurred. Please try again.';
+    } finally {
+      loading = false;
+    }
   }
 </script>
 
@@ -18,25 +43,20 @@
   <div class="bg-white p-8 rounded-lg shadow-md w-96">
     <h1 class="text-2xl font-bold mb-6 text-center">Create Account</h1>
     
-    <form on:submit|preventDefault={handleRegister} class="space-y-4">
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-        <input
-          type="text"
-          id="name"
-          bind:value={name}
-          placeholder="Enter your full name"
-          class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-          required
-        />
+    {#if error}
+      <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+        {error}
       </div>
-
+    {/if}
+    
+    <form on:submit|preventDefault={handleRegister} class="space-y-4">
       <div>
         <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
         <input
           type="text"
           id="username"
           bind:value={username}
+          disabled={loading}
           placeholder="Choose a username"
           class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
           required
@@ -49,6 +69,7 @@
           type="password"
           id="password"
           bind:value={password}
+          disabled={loading}
           placeholder="Create a password"
           class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
           required
@@ -61,6 +82,7 @@
           type="password"
           id="confirmPassword"
           bind:value={confirmPassword}
+          disabled={loading}
           placeholder="Confirm your password"
           class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
           required
@@ -69,9 +91,10 @@
       
       <button
         type="submit"
-        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        disabled={loading}
+        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Register
+        {loading ? 'Creating Account...' : 'Register'}
       </button>
     </form>
     

@@ -1,45 +1,50 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { getProducts } from '$lib';
   import Sidebar from '$lib/Sidebar.svelte';
 
-  // Dummy data for dashboard
-  const dashboardData = {
-    todaySales: 0.00,
+  // Dashboard data
+  let dashboardData = {
     totalProducts: 0,
     categories: 0,
     lowStockItems: 0
   };
 
-  // Dummy data for employee list
-  const employees = [
-    { id: 1, name: 'John Doe', username: 'johndoe', role: 'Admin' },
-    { id: 2, name: 'Jane Smith', username: 'janesmith', role: 'Manager' }
-  ];
+  // Loading and error states
+  let loading = true;
+  let error = '';
 
-  // Modal state
-  let showEditModal = false;
-  let showDeleteModal = false;
-  let selectedEmployee = null;
+  onMount(async () => {
+    await loadDashboardData();
+  });
 
-  function openEditModal(employee) {
-    selectedEmployee = { ...employee };
-    showEditModal = true;
+  async function loadDashboardData() {
+    loading = true;
+    error = '';
+    
+    try {
+      // Fetch products data
+      const products = await getProducts();
+      if (Array.isArray(products)) {
+        dashboardData.totalProducts = products.length;
+        
+        // Count unique categories
+        const uniqueCategories = new Set(products.map(p => p.category).filter(Boolean));
+        dashboardData.categories = uniqueCategories.size;
+        
+        // Count low stock items (less than 10)
+        dashboardData.lowStockItems = products.filter(p => p.stock < 10).length;
+      }
+    } catch (e) {
+      console.error('Error loading dashboard data:', e);
+      error = 'Failed to load dashboard data';
+    } finally {
+      loading = false;
+    }
   }
 
-  function openDeleteModal(employee) {
-    selectedEmployee = employee;
-    showDeleteModal = true;
-  }
-
-  function handleEdit() {
-    // Add edit logic here
-    console.log('Editing employee:', selectedEmployee);
-    showEditModal = false;
-  }
-
-  function handleDelete() {
-    // Add delete logic here
-    console.log('Deleting employee:', selectedEmployee);
-    showDeleteModal = false;
+  async function handleRefresh() {
+    await loadDashboardData();
   }
 </script>
 
@@ -49,147 +54,52 @@
   <main class="ml-56 p-6 w-full">
     <div class="flex justify-between items-center mb-6">
       <h1 class="text-2xl font-bold">Dashboard</h1>
-      <button class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
-        Refresh
+      <button 
+        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 disabled:opacity-50"
+        on:click={handleRefresh}
+        disabled={loading}
+      >
+        {loading ? 'Refreshing...' : 'Refresh'}
       </button>
     </div>
 
-    <div class="grid grid-cols-4 gap-6 mb-8">
-      <div class="bg-blue-600 text-white p-6 rounded-lg">
-        <h3 class="text-lg">Today's Sales</h3>
-        <p class="text-2xl font-bold">₱{dashboardData.todaySales.toFixed(2)}</p>
+    {#if error}
+      <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+        {error}
       </div>
-      
-      <div class="bg-green-600 text-white p-6 rounded-lg">
-        <h3 class="text-lg">Total Products</h3>
-        <p class="text-2xl font-bold">{dashboardData.totalProducts}</p>
-      </div>
-      
-      <div class="bg-cyan-500 text-white p-6 rounded-lg">
-        <h3 class="text-lg">Categories</h3>
-        <p class="text-2xl font-bold">{dashboardData.categories}</p>
-      </div>
-      
-      <div class="bg-yellow-500 text-white p-6 rounded-lg">
-        <h3 class="text-lg">Low Stock Items</h3>
-        <p class="text-2xl font-bold">{dashboardData.lowStockItems}</p>
-      </div>
-    </div>
+    {/if}
 
-    <div class="bg-white rounded-lg shadow p-6">
-      <h2 class="text-xl font-bold mb-4">Employee List</h2>
-      <table class="w-full">
-        <thead>
-          <tr class="border-b">
-            <th class="text-left py-2">ID</th>
-            <th class="text-left py-2">Name</th>
-            <th class="text-left py-2">Username</th>
-            <th class="text-left py-2">Role</th>
-            <th class="text-left py-2">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {#each employees as employee}
-            <tr class="border-b">
-              <td class="py-2">{employee.id}</td>
-              <td class="py-2">{employee.name}</td>
-              <td class="py-2">{employee.username}</td>
-              <td class="py-2">{employee.role}</td>
-              <td class="py-2">
-                <button 
-                  class="text-blue-600 hover:text-blue-800 mr-2"
-                  on:click={() => openEditModal(employee)}
-                >
-                  Edit
-                </button>
-                <button 
-                  class="text-red-600 hover:text-red-800"
-                  on:click={() => openDeleteModal(employee)}
-                >
-                  Delete
-                </button>
-              </td>
-            </tr>
-          {/each}
-        </tbody>
-      </table>
-    </div>
+    {#if loading && !dashboardData.totalProducts}
+      <div class="grid grid-cols-4 gap-6 mb-8">
+        {#each Array(4) as _}
+          <div class="bg-gray-100 animate-pulse h-32 rounded-lg"></div>
+        {/each}
+      </div>
+    {:else}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div class="bg-green-600 text-white p-6 rounded-lg">
+          <h3 class="text-lg">Total Products</h3>
+          <p class="text-2xl font-bold">{dashboardData.totalProducts}</p>
+        </div>
+        
+        <div class="bg-cyan-500 text-white p-6 rounded-lg">
+          <h3 class="text-lg">Categories</h3>
+          <p class="text-2xl font-bold">{dashboardData.categories}</p>
+        </div>
+        
+        <div class="bg-yellow-500 text-white p-6 rounded-lg">
+          <h3 class="text-lg">Low Stock Items</h3>
+          <p class="text-2xl font-bold">{dashboardData.lowStockItems}</p>
+        </div>
+      </div>
+
+      <!-- Recent Activity -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h2 class="text-xl font-bold mb-4">Recent Activity</h2>
+        <div class="space-y-4">
+          <!-- Add recent activity items here -->
+        </div>
+      </div>
+    {/if}
   </main>
-</div>
-
-<!-- Edit Modal -->
-{#if showEditModal && selectedEmployee}
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-    <div class="bg-white p-6 rounded-lg w-96">
-      <h2 class="text-xl font-bold mb-4">Edit Employee</h2>
-      <form on:submit|preventDefault={handleEdit} class="space-y-4">
-        <div>
-          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-          <input
-            type="text"
-            id="name"
-            bind:value={selectedEmployee.name}
-            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md"
-          />
-        </div>
-        <div>
-          <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
-          <input
-            type="text"
-            id="username"
-            bind:value={selectedEmployee.username}
-            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md"
-          />
-        </div>
-        <div>
-          <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
-          <input
-            type="text"
-            id="role"
-            bind:value={selectedEmployee.role}
-            class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md"
-          />
-        </div>
-        <div class="flex justify-end space-x-3">
-          <button
-            type="button"
-            class="px-4 py-2 text-gray-600 hover:text-gray-800"
-            on:click={() => showEditModal = false}
-          >
-            Cancel
-          </button>
-          <button
-            type="submit"
-            class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700"
-          >
-            Save Changes
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-{/if}
-
-<!-- Delete Modal -->
-{#if showDeleteModal && selectedEmployee}
-  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-    <div class="bg-white p-6 rounded-lg w-96">
-      <h2 class="text-xl font-bold mb-4">Confirm Delete</h2>
-      <p class="mb-4">Are you sure you want to delete {selectedEmployee.name}?</p>
-      <div class="flex justify-end space-x-3">
-        <button
-          class="px-4 py-2 text-gray-600 hover:text-gray-800"
-          on:click={() => showDeleteModal = false}
-        >
-          Cancel
-        </button>
-        <button
-          class="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
-          on:click={handleDelete}
-        >
-          Delete
-        </button>
-      </div>
-    </div>
-  </div>
-{/if} 
+</div> 
