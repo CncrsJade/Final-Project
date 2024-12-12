@@ -41,3 +41,15 @@ function decryptRequest() {
 
   return json_decode($decrypted, true);
 }
+
+// Admin route to get all users
+if ($_SERVER['REQUEST_METHOD'] === 'GET' && strpos($_SERVER['REQUEST_URI'], '/admin/users') === 0) {
+    // Check if user is admin
+    if ($auth->isAdmin()) { // You need to implement this method
+        $users = handleGet('/users'); // Reuse existing get handler
+        echo json_encode($users);
+    } else {
+        header('HTTP/1.1 403 Forbidden');
+        echo json_encode(['error' => 'Unauthorized']);
+    }
+}
