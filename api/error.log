@@ -806,3 +806,490 @@
     [newPassword] => 123
 )
 
+[12-Dec-2024 06:15:46 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 06:15:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 06:15:46 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 06:15:46 Europe/Berlin] Raw request data: {"username":"","password":""}
+[12-Dec-2024 06:15:46 Europe/Berlin] Parsed request data: Array
+(
+    [username] => 
+    [password] => 
+)
+
+[12-Dec-2024 06:15:46 Europe/Berlin] API Error: Invalid credentials
+#0 {main}
+[12-Dec-2024 06:15:52 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 06:15:52 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 06:15:52 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 06:15:52 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[12-Dec-2024 06:15:52 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[12-Dec-2024 06:15:52 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:15:52 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:15:52 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:15:55 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:15:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:15:55 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:16:39 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:16:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:16:39 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:16:40 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 06:16:40 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 06:16:40 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 06:16:40 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[12-Dec-2024 06:16:40 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[12-Dec-2024 06:16:41 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:16:41 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:16:41 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:16:43 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:16:43 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:16:43 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:54:39 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 06:54:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 06:54:39 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 06:54:39 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[12-Dec-2024 06:54:39 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[12-Dec-2024 06:54:39 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:54:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:54:39 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:54:42 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:54:42 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:54:42 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:57:45 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:57:45 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:57:45 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:59:30 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[12-Dec-2024 06:59:30 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[12-Dec-2024 06:59:30 Europe/Berlin] Route after cleanup: /login
+[12-Dec-2024 06:59:30 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[12-Dec-2024 06:59:30 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[12-Dec-2024 06:59:30 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:59:30 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:59:30 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:59:33 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:59:33 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:59:33 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 06:59:34 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 06:59:34 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 06:59:34 Europe/Berlin] Route after cleanup: /products
+[12-Dec-2024 07:03:20 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[12-Dec-2024 07:03:20 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[12-Dec-2024 07:03:20 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:49:47 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[17-Dec-2024 19:49:47 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[17-Dec-2024 19:49:47 Europe/Berlin] Route after cleanup: /login
+[17-Dec-2024 19:49:47 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[17-Dec-2024 19:49:47 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[17-Dec-2024 19:49:47 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:49:47 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:49:47 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:49:50 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:49:50 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:49:50 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:49:51 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:49:51 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:49:51 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:49:57 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:49:57 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:49:57 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:49:59 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[17-Dec-2024 19:49:59 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[17-Dec-2024 19:49:59 Europe/Berlin] Route after cleanup: /categories
+[17-Dec-2024 19:50:04 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 19:50:04 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 19:50:04 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 19:50:15 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 19:50:15 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 19:50:15 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 19:50:15 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[17-Dec-2024 19:50:15 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[17-Dec-2024 19:50:15 Europe/Berlin] Route after cleanup: /categories
+[17-Dec-2024 19:50:16 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:50:16 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:50:16 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:50:17 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:50:17 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:50:17 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 19:50:19 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 19:50:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 19:50:19 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 21:05:07 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[17-Dec-2024 21:05:07 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[17-Dec-2024 21:05:07 Europe/Berlin] Route after cleanup: /login
+[17-Dec-2024 21:05:07 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[17-Dec-2024 21:05:07 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[17-Dec-2024 21:05:08 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 21:05:08 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 21:05:08 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 21:05:24 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:05:24 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:05:24 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:05:27 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[17-Dec-2024 21:05:27 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[17-Dec-2024 21:05:27 Europe/Berlin] Route after cleanup: /categories
+[17-Dec-2024 21:05:32 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[17-Dec-2024 21:05:32 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[17-Dec-2024 21:05:32 Europe/Berlin] Route after cleanup: /products
+[17-Dec-2024 21:05:50 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[17-Dec-2024 21:05:50 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[17-Dec-2024 21:05:50 Europe/Berlin] Route after cleanup: /categories
+[17-Dec-2024 21:05:53 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:05:53 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:05:53 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:10:15 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=5
+[17-Dec-2024 21:10:15 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:10:15 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:10:15 Europe/Berlin] DELETE request for route: users with ID: 5
+[17-Dec-2024 21:10:15 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[17-Dec-2024 21:14:55 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:14:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:14:55 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:15:05 Europe/Berlin] Full URI: /Final-Project/api/api/users/5
+[17-Dec-2024 21:15:05 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/5
+[17-Dec-2024 21:15:05 Europe/Berlin] Route after cleanup: /users/5
+[17-Dec-2024 21:15:05 Europe/Berlin] DELETE request for route: users/5 with ID: none
+[17-Dec-2024 21:15:05 Europe/Berlin] API Error: Route not found: users/5
+#0 {main}
+[17-Dec-2024 21:15:35 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:15:35 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:15:35 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:15:59 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:15:59 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:15:59 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:16:02 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:16:02 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:16:02 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:16:06 Europe/Berlin] Full URI: /Final-Project/api/api/users/6
+[17-Dec-2024 21:16:06 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/6
+[17-Dec-2024 21:16:06 Europe/Berlin] Route after cleanup: /users/6
+[17-Dec-2024 21:16:06 Europe/Berlin] DELETE request for route: users/6 with ID: none
+[17-Dec-2024 21:16:06 Europe/Berlin] API Error: Route not found: users/6
+#0 {main}
+[17-Dec-2024 21:16:28 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:16:28 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:16:28 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:16:32 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:16:32 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:16:32 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:16:35 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:16:35 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:16:35 Europe/Berlin] Route after cleanup: /users
+[17-Dec-2024 21:16:39 Europe/Berlin] Full URI: /Final-Project/api/api/users/5
+[17-Dec-2024 21:16:39 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/5
+[17-Dec-2024 21:16:39 Europe/Berlin] Route after cleanup: /users/5
+[17-Dec-2024 21:16:39 Europe/Berlin] DELETE request for route: users/5 with ID: none
+[17-Dec-2024 21:16:39 Europe/Berlin] API Error: Route not found: users/5
+#0 {main}
+[17-Dec-2024 21:16:53 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[17-Dec-2024 21:16:53 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[17-Dec-2024 21:16:53 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:34:56 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:34:56 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:34:56 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:35:08 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=5
+[18-Dec-2024 01:35:08 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:35:08 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:35:08 Europe/Berlin] DELETE request for route: users with ID: 5
+[18-Dec-2024 01:35:08 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 01:35:52 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:35:52 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:35:52 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:35:55 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:35:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:35:55 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:36:00 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:36:00 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:36:00 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:36:04 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:36:04 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:36:04 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:36:12 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 01:36:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:36:12 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:36:12 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 01:36:12 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 01:36:29 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:36:29 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:36:29 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:38:20 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 01:38:20 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:38:20 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:38:20 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 01:38:20 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 01:41:55 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:41:55 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:41:55 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:41:58 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 01:41:58 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:41:58 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:41:58 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 01:41:58 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 01:47:56 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:47:56 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:47:56 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:48:00 Europe/Berlin] Full URI: /Final-Project/api/api/users/2
+[18-Dec-2024 01:48:00 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/2
+[18-Dec-2024 01:48:00 Europe/Berlin] Route after cleanup: /users/2
+[18-Dec-2024 01:48:00 Europe/Berlin] DELETE request for route: users/2 with ID: none
+[18-Dec-2024 01:48:00 Europe/Berlin] API Error: Route not found: users/2
+#0 {main}
+[18-Dec-2024 01:48:23 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 01:48:23 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:48:23 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:48:27 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 01:48:27 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 01:48:27 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 01:48:27 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 01:48:27 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:17:43 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:17:43 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:17:43 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:17:46 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[18-Dec-2024 02:17:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[18-Dec-2024 02:17:46 Europe/Berlin] Route after cleanup: /categories
+[18-Dec-2024 02:17:48 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:17:48 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:17:48 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:17:49 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:17:49 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:17:49 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:17:50 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:17:50 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:17:50 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:17:53 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[18-Dec-2024 02:17:53 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[18-Dec-2024 02:17:53 Europe/Berlin] Route after cleanup: /categories
+[18-Dec-2024 02:18:12 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:18:12 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:18:12 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:18:19 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:18:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:18:19 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:18:19 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:18:19 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:20:46 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:20:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:20:46 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:20:50 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:20:50 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:20:50 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:20:50 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:20:50 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:27:38 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:27:38 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:27:38 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:27:38 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:27:38 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:27:52 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=3
+[18-Dec-2024 02:27:52 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:27:52 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:27:52 Europe/Berlin] DELETE request for route: users with ID: 3
+[18-Dec-2024 02:27:52 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:27:54 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=4
+[18-Dec-2024 02:27:54 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:27:54 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:27:54 Europe/Berlin] DELETE request for route: users with ID: 4
+[18-Dec-2024 02:27:54 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:27:57 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=5
+[18-Dec-2024 02:27:57 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:27:57 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:27:57 Europe/Berlin] DELETE request for route: users with ID: 5
+[18-Dec-2024 02:27:57 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:29:37 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:29:37 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:29:37 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:29:48 Europe/Berlin] Full URI: /Final-Project/api/api/users/2
+[18-Dec-2024 02:29:48 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/2
+[18-Dec-2024 02:29:48 Europe/Berlin] Route after cleanup: /users/2
+[18-Dec-2024 02:29:48 Europe/Berlin] DELETE request for route: users/2 with ID: none
+[18-Dec-2024 02:29:48 Europe/Berlin] API Error: Route not found: users/2
+#0 {main}
+[18-Dec-2024 02:33:42 Europe/Berlin] API Error: Method not allowed
+#0 {main}
+[18-Dec-2024 02:34:25 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:34:25 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:34:25 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:37:21 Europe/Berlin] Full URI: /Final-Project/api/api/users/2
+[18-Dec-2024 02:37:21 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/2
+[18-Dec-2024 02:37:21 Europe/Berlin] Route after cleanup: /users/2
+[18-Dec-2024 02:37:21 Europe/Berlin] DELETE request for route: users/2 with ID: none
+[18-Dec-2024 02:37:21 Europe/Berlin] API Error: Route not found: users/2
+#0 {main}
+[18-Dec-2024 02:38:15 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:38:15 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:38:15 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:38:17 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:38:17 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:38:17 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:38:19 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:38:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:38:19 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:38:19 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:38:19 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:40:46 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:40:46 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:40:46 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:40:48 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:40:48 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:40:48 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:40:48 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:40:48 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:40:53 Europe/Berlin] Full URI: /Final-Project/api/api/users/3
+[18-Dec-2024 02:40:53 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users/3
+[18-Dec-2024 02:40:53 Europe/Berlin] Route after cleanup: /users/3
+[18-Dec-2024 02:40:54 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:40:54 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:40:54 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:40:59 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=4
+[18-Dec-2024 02:40:59 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:40:59 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:40:59 Europe/Berlin] DELETE request for route: users with ID: 4
+[18-Dec-2024 02:40:59 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:48:14 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:48:14 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:48:14 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:48:16 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:48:16 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:48:16 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:48:16 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:48:16 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 02:48:19 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[18-Dec-2024 02:48:19 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[18-Dec-2024 02:48:19 Europe/Berlin] Route after cleanup: /categories
+[18-Dec-2024 02:48:28 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:48:28 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:48:28 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:48:36 Europe/Berlin] Full URI: /Final-Project/api/api/products?id=4
+[18-Dec-2024 02:48:36 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:48:36 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:48:36 Europe/Berlin] DELETE request for route: products with ID: 4
+[18-Dec-2024 02:48:36 Europe/Berlin] Delete query executed. Result: true
+[18-Dec-2024 02:48:36 Europe/Berlin] Product status after update: inactive
+[18-Dec-2024 02:48:36 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:48:36 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:48:36 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:48:48 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:48:48 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:48:48 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:48:52 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:48:52 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:48:52 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:48:54 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 02:48:54 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 02:48:54 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 02:49:48 Europe/Berlin] Full URI: /Final-Project/api/api/categories
+[18-Dec-2024 02:49:48 Europe/Berlin] Route before cleanup: /Final-Project/api/api/categories
+[18-Dec-2024 02:49:48 Europe/Berlin] Route after cleanup: /categories
+[18-Dec-2024 02:49:50 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 02:49:50 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:49:50 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:49:53 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 02:49:53 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 02:49:53 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 02:49:53 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 02:49:53 Europe/Berlin] API Error: Route not found: users
+#0 {main}
+[18-Dec-2024 05:16:31 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[18-Dec-2024 05:16:31 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[18-Dec-2024 05:16:31 Europe/Berlin] Route after cleanup: /login
+[18-Dec-2024 05:16:31 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[18-Dec-2024 05:16:31 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[18-Dec-2024 05:16:31 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 05:16:31 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 05:16:31 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 05:16:41 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[18-Dec-2024 05:16:41 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[18-Dec-2024 05:16:41 Europe/Berlin] Route after cleanup: /login
+[18-Dec-2024 05:16:41 Europe/Berlin] Raw request data: {"username":"wmdlkwd","password":"wdw.,dm"}
+[18-Dec-2024 05:16:41 Europe/Berlin] Parsed request data: Array
+(
+    [username] => wmdlkwd
+    [password] => wdw.,dm
+)
+
+[18-Dec-2024 05:16:41 Europe/Berlin] API Error: Invalid credentials
+#0 {main}
+[18-Dec-2024 05:16:56 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[18-Dec-2024 05:16:56 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[18-Dec-2024 05:16:56 Europe/Berlin] Route after cleanup: /login
+[18-Dec-2024 05:16:56 Europe/Berlin] Raw request data: {"username":"admin","password":"1234"}
+[18-Dec-2024 05:16:56 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 1234
+)
+
+[18-Dec-2024 05:16:56 Europe/Berlin] API Error: Invalid credentials
+#0 {main}
+[18-Dec-2024 05:17:00 Europe/Berlin] Full URI: /Final-Project/api/api/login
+[18-Dec-2024 05:17:00 Europe/Berlin] Route before cleanup: /Final-Project/api/api/login
+[18-Dec-2024 05:17:00 Europe/Berlin] Route after cleanup: /login
+[18-Dec-2024 05:17:00 Europe/Berlin] Raw request data: {"username":"admin","password":"123"}
+[18-Dec-2024 05:17:00 Europe/Berlin] Parsed request data: Array
+(
+    [username] => admin
+    [password] => 123
+)
+
+[18-Dec-2024 05:17:00 Europe/Berlin] Full URI: /Final-Project/api/api/products
+[18-Dec-2024 05:17:00 Europe/Berlin] Route before cleanup: /Final-Project/api/api/products
+[18-Dec-2024 05:17:00 Europe/Berlin] Route after cleanup: /products
+[18-Dec-2024 05:17:03 Europe/Berlin] Full URI: /Final-Project/api/api/users
+[18-Dec-2024 05:17:03 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 05:17:03 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 05:17:06 Europe/Berlin] Full URI: /Final-Project/api/api/users?id=2
+[18-Dec-2024 05:17:06 Europe/Berlin] Route before cleanup: /Final-Project/api/api/users
+[18-Dec-2024 05:17:06 Europe/Berlin] Route after cleanup: /users
+[18-Dec-2024 05:17:06 Europe/Berlin] DELETE request for route: users with ID: 2
+[18-Dec-2024 05:17:06 Europe/Berlin] API Error: Route not found: users
+#0 {main}

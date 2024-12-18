@@ -18,6 +18,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 }
 
 require_once("./config/Connection.php");
+require_once("./modules/Auth.php"); //ADDED
+
+//ENCRYPTION REQUEST ADDED CONNECTED TO AUTH.PHP
+$auth = new Auth();
+
+function encryptResponse($data) {
+    global $auth;
+    return json_encode($auth->encryptData($data));
+}
+
+//DECRYPTION REQUESTADDED CONNECTED TO AUTH.PHP
+function decryptRequest() {
+    global $auth;
+    $rawData = file_get_contents("php://input");
+    $decodedData = json_decode($rawData, true);
+
+    if (!isset($decodedData['data']) || !isset($decodedData['iv'])) {
+        return null;
+    }
+
+    return $auth->decryptData($decodedData['data'], $decodedData['iv']);
+}
 
 try {
     // Test database connection
@@ -675,6 +697,27 @@ try {
                     }
                     break;
                     
+                case '/users':
+                    if (!isset($_GET['id'])) {
+                        throw new Exception('User ID is required');
+                    }
+
+                    $userId = $_GET['id'];
+
+                    try {
+                        $stmt = $db->prepare("DELETE FROM users WHERE id = ?");
+                        $stmt->execute([$userId]);
+
+                        $response = [
+                            'success' => true,
+                            'message' => 'User deleted successfully',
+                            'user_id' => $userId
+                        ];
+                    } catch (Exception $e) {
+                        throw new Exception('Failed to delete user: ' . $e->getMessage());
+                    }
+                    break;
+
                 default:
                     throw new Exception('Route not found: ' . $route);
             }
